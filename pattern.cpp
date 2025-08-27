@@ -9,16 +9,17 @@ int main(){
     cin>>n; 
 
     //  print  a
-            // b b
-            // c c c  
-            // d d d d  
-            // e e e e e      till n 
+            // b c
+            // d e f  
+            // g h i j  
+            // k l m n o       till n 
     
 
     for(row=1;row<=n;row++){
         for(col=1;col<=row;col++){
-            name = 'a'+row-1;
+            
             cout<<name<<" ";
+            name = name+1;
         }cout<<endl;
 
     }
