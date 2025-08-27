@@ -3,16 +3,21 @@
 using namespace std ; 
 
 int main(){
+    int row , col ; 
 
-    //  print * * * * *  for 5 rows
+    //  print   *      for 5 rows
+            //  * *
+            //  * * *
+            //  * * * *
+            //  * * * * * 
+    
 
-    for(int i = 1 ; i<=5;i++){
-        for(int j = 1 ;j<=5;j++){
+    for(row=1;row<=5;row++){
+        for(col=1;col<=row;col++){
             cout<<"* ";
-
         }cout<<endl;
-    }
 
+    }
 
   
      
