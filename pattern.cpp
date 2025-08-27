@@ -8,18 +8,18 @@ int main(){
     cout<<"Enter the value of n : ";
     cin>>n; 
 
-    //  print  a
-            // b c
-            // d e f  
-            // g h i j  
-            // k l m n o       till n 
+    //  print  1 2 3 4 5 
+            // 1 2 3 4 
+            // 1 2 3 
+            // 1 2  
+            // 1        till n 
     
 
-    for(row=1;row<=n;row++){
+    for(row=n;row>=1;row--){
         for(col=1;col<=row;col++){
             
-            cout<<name<<" ";
-            name = name+1;
+            cout<<col<<" ";
+            
         }cout<<endl;
 
     }
