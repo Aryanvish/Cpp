@@ -3,18 +3,20 @@
 using namespace std ; 
 
 int main(){
-    int row , col ; 
+    int row , col , n ;
+    cout<<"Enter the value of n : ";
+    cin>>n; 
 
-    //  print 5 4 3 2 1   for 5 rows
+    //  print squares of 1 2 3 4 5  for n take user input of n rows
             //  
             //   
             //  
             // 
     
 
-    for(row=5;row>=1;row--){
-        for(col=5;col>=1;col--){
-            cout<<col<<" ";
+    for(row=n;row>=1;row--){
+        for(col=1;col<=n;col++){
+            cout<<col*col<<" ";
         }cout<<endl;
 
     }
