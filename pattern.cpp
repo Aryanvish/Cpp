@@ -8,15 +8,15 @@ int main(){
     cout<<"Enter the value of n : ";
     cin>>n; 
 
-    //  print  1 2 3 4 5 
-            // 1 2 3 4 
-            // 1 2 3 
-            // 1 2  
+    //  print  5 4 3 2 1
+            // 4 3 2 1  
+            // 3 2 1 
+            // 2 1 
             // 1        till n 
     
 
     for(row=n;row>=1;row--){
-        for(col=1;col<=row;col++){
+        for(col=row;col>=1;col--){
             
             cout<<col<<" ";
             
