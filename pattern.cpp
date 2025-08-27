@@ -8,10 +8,10 @@ int main(){
     cin>>n; 
 
     //  print  1 
-            // 1 2
-            // 1 2 3 
-            // 1 2 3 4 
-            // 1 2 3 4 5    till n 
+            // 2 2 
+            // 3 3 3  
+            // 4 4 4 4  
+            // 5 5 5 5 5     till n 
     
 
     for(row=1;row<=n;row++){
