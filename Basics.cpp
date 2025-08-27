@@ -1,35 +1,57 @@
 #include<iostream>
+#include<cmath>
 using namespace std ; 
+int countdigit(int n){
+        int count = 0 ;
+        while(n){
+        count++ ; 
+        n/=10 ;
+
+        } 
+        return count ; 
+    }
 
 int main(){
-//   code for telling whether the input n is a power of a number x asked by user Eg: the user asks n=100 to check whether its power of 2  
 
-int i , n , x ; 
+    //  to check whether the number is armstrong or not 
 
-//  Take the user input of number and the x in whose power u want to check
+    int n , r , a  , arm = 0 , sum ,  m ;
 
-cout<<"Enter the number whose power u want to check :";
-cin>>n;
-cout<<"Enter the number in whose power u want to check : ";
-cin>>x;
+    cout<<"Enter the value of n : ";
+    cin>>n;
+    sum = n;
 
-if(n<=0){
-    cout<<"Enter a number greater than 0 as there is no such number which gives -ve and 0 as the ans when raised to a power";
-}
-if(n==1){
-    cout<<"1";
-}
+    m = countdigit(n);
 
-while(n!=1){
-    for(i=1;i<=x-1;i++){
-        if(n%x==i){
-            cout<<"0";
-        }
+    while(n!=0){
+        r=n%10;
+        n/=10;
+        // for(a=1;a>0;a--){
+        //      for(int i = 0 ; i<=m;i++){
+           
+        //          a = r*a ;
+
+        //     }
+        //  }
+
+        // arm+=a ; Dont use this insted use the power function 
+
+        arm=arm+(int)pow(r,m);
+        
+
     }
-    n/=x;
-}
-cout<<"1" ;
+    if(arm==sum){
+        cout<<"is a armstrong number";
+
+    }
+    else{
+        cout<<"is not a armstrong number";
+    }
+    
+
+     
 
 
 
+    
 }
