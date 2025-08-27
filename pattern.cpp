@@ -5,7 +5,7 @@ using namespace std ;
 int main(){
     int row , col ; 
 
-    //  print 1 2 3 4 5    for 5 rows
+    //  print 5 4 3 2 1   for 5 rows
             //  
             //   
             //  
@@ -13,7 +13,7 @@ int main(){
     
 
     for(row=5;row>=1;row--){
-        for(col=1;col<=5;col++){
+        for(col=5;col>=1;col--){
             cout<<col<<" ";
         }cout<<endl;
 
